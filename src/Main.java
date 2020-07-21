@@ -8,11 +8,14 @@ public class Main {
     public static void main(String[] args) {
 
             Scanner sc = new Scanner(System.in);
-            System.out.println("De que tamaño quieres tu array");
+            System.out.println("Cuantas filas quieres en tu array");
             int filas = sc.nextInt();
+            System.out.println("Cuantas columnas quieres en tu array");
+            int columnas = sc.nextInt();
 
 
-            ArrayBidimensionalSuma miObjeto = new ArrayBidimensionalSuma(filas);
+
+            ArrayBidimensionalSuma miObjeto = new ArrayBidimensionalSuma(filas,columnas);
             miObjeto.suma();
             miObjeto.draw();
     }
